@@ -1,0 +1,111 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a background color and text color for the whole page */
+  body {
+    background-color: #262626;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Vertical centering */
+  }
+  
+  /* Style the content container */
+  .content {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    max-width: 400px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Style the main section with the counter */
+  .main {
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 72px;
+    color: #ff6b6b; /* Red color for the counter */
+    animation: pulse 1s 1s alternate, grow 0.5s ease-in-out;
+  }
+  
+  button {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #ff4d4d; /* Darker red on hover */
+  }
+  
+  /* Style the "Previous count" section */
+  .save {
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Dark theme */
+  .dark-theme {
+    --primary-bg-color: #333;
+    --primary-text-color: #ccc;
+  }
+  
+  /* Animation Keyframes */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes grow {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  
